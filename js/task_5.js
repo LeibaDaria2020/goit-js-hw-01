@@ -1,4 +1,4 @@
-let country = prompt("Выберите страну доставки").toLowerCase()
+let country = prompt("Выберите страну доставки")
 let deliveryCost = ""
 let message = ""
 
@@ -6,7 +6,7 @@ if (country === null) {
   message = alert("Отменено пользователем!")
 }
 
-switch (country) {
+switch (country.toLowerCase()) {
   case "китай":
     deliveryCost = "100 кредитов"
     break
