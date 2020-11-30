@@ -1,8 +1,8 @@
 let credits = 29000
 const pricePerDroid = 3000
 const whantsBuyMessage = prompt("How many droids do you need?")
-let totalPrice = ""
-let message = ""
+let totalPrice = "0"
+let message = " "
 
 if (whantsBuyMessage === null) {
   message = alert("Canseled by user!")

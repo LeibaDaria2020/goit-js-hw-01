@@ -1,9 +1,9 @@
 let country = prompt("Выберите страну доставки")
 let deliveryCost = "0"
-let message
+let message = " "
 
 if (country === null) {
-  message = "Отменено пользователем!"
+  message = alert("Отменено пользователем!")
 }
 
 switch (country.toLowerCase()) {
@@ -28,7 +28,7 @@ switch (country.toLowerCase()) {
     break
 
   default:
-    message = "В вашу страну доставка не доступна"
+    message = alert("В вашу страну доставка не доступна")
 }
 
-message = `"Доставка в ${country} будет стоить ${deliveryCost} кредитов"`
+message = alert(`"Доставка в ${country} будет стоить ${deliveryCost} кредитов"`)

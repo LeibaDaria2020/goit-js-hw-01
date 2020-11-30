@@ -1,6 +1,5 @@
 const userInput = prompt("Введите пароль.")
 const ADMIN_PASSWORD = "dasha"
-const passwordValidation = ""
 let message = ""
 
 if (userInput === null) {
