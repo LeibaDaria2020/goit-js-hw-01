@@ -1,5 +1,5 @@
-let total = +" "
-const message = alert("Отменено пользователем")
+let total = 0
+const message = "Отменено пользователем"
 
 while (true) {
   let input = prompt("Введите число!")
@@ -14,4 +14,4 @@ while (true) {
   total += amount
 }
 
-console.log(`Общая сумма чисел равна ${total}`)
+console.log(`"Общая сумма чисел равна ${total}"`)
