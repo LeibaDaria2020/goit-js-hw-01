@@ -1,11 +1,17 @@
-const userInput = prompt("Введите пароль.")
-const ADMIN_PASSWORD = "dasha"
-let message = ""
+function findLongestWord(string) {
+  const words = string.split(" ")
+  let longestWord = words[0]
 
-if (userInput === null) {
-  message = alert("Отменено пользователем!")
-} else if (userInput === ADMIN_PASSWORD) {
-  message = alert("Добро пожаловать!")
-} else {
-  message = alert("Доступ запрещен, неверный пароль!")
+  for (const word of words) {
+    if (word.length > longestWord.length) {
+      longestWord = word
+    }
+  }
+  return longestWord
 }
+
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"))
+
+console.log(findLongestWord("Google do a roll"))
+
+console.log(findLongestWord("May the force be with you"))

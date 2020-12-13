@@ -1,7 +1,3 @@
-const name = "Генератор защитного поля"
-let price = "1000"
-console.log(`"Выбран ${name}, цена за штуку ${price} кредитов"`)
-
-price = "2000"
-
-console.log(`"Выбран ${name}, цена за штуку ${price} кредитов"`)
+function logItems(array) {
+  for (let i = 0; i < array.length; i++) console.log(`${i + 1} - ${array[i]}`)
+}

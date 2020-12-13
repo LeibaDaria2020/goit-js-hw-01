@@ -1,15 +1,3 @@
-let credits = 29000
-const pricePerDroid = 3000
-const whantsBuyMessage = prompt("How many droids do you need?")
-let totalPrice = "0"
-let message = " "
-
-if (whantsBuyMessage === null) {
-  message = alert("Canseled by user!")
-} else if (credits < whantsBuyMessage * pricePerDroid) {
-  message = alert("You have no enough credits on the balance")
-} else {
-  let amount = Number.parseInt(whantsBuyMessage)
-  credits = credits - whantsBuyMessage * pricePerDroid
-  message = alert(`You bought ${amount} droids, you have ${credits} on a balance`)
+const formatString = function (string) {
+  return string.length > 40 ? string.slice(0, 40) + "..." : string
 }

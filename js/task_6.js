@@ -1,17 +1,11 @@
-let total = 0
-const message = "Отменено пользователем"
-
-while (true) {
-  let input = prompt("Введите число!")
-
-  if (input === null) {
-    message
-    break
-  }
-
-  let amount = Number.parseInt(input)
-
-  total += amount
+const checkForSpam = function (message) {
+  return message.toLowerCase().includes("spam") || message.toLowerCase().includes("sale")
 }
 
-console.log(`"Общая сумма чисел равна ${total}"`)
+console.log(checkForSpam("Latest technology news")) // false
+
+console.log(checkForSpam("JavaScript weekly newsletter")) // false
+
+console.log(checkForSpam("Get best sale offers now!")) // true
+
+console.log(checkForSpam("[SPAM] How to earn fast money?")) // true
